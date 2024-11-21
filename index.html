@@ -23,7 +23,7 @@
             <img src="./images/logo.png" alt="RedStore Logo" width="125px" />
           </div>
           <nav>
-            <ul>
+            <ul id="MenuItems">
               <li><a href="#">Home</a></li>
               <li><a href="#">Product</a></li>
               <li><a href="#">About</a></li>
@@ -32,6 +32,11 @@
             </ul>
           </nav>
           <img src="./images/cart.png" alt="Cart" width="30px" height="30px" />
+          <img
+            src="./images/menu.png"
+            class="menu-icon"
+            onclick="menutoggle()"
+          />
         </div>
         <div class="row">
           <div class="col-2">
@@ -349,7 +354,6 @@
               <li>Blog Post</li>
               <li>Return Policy</li>
               <li>Join Afficialete</li>
-              <li></li>
             </ul>
           </div>
           <div class="footer-col-4">
@@ -359,11 +363,27 @@
               <li>Twitter</li>
               <li>Instagram</li>
               <li>YouTube</li>
-              <li></li>
             </ul>
           </div>
         </div>
+        <hr />
+        <p class="copywrite">
+          Copyright 2024 - BilalCode <small class="dil">❤</small>
+        </p>
       </div>
     </div>
+
+    <!-- script js -->
+    <script>
+      var MenuItems = document.getElementById("MenuItems");
+      MenuItems.style.maxHeight = "0px";
+      function menutoggle() {
+        if (MenuItems.style.maxHeight == "0px") {
+          MenuItems.style.maxHeight = "200px";
+        } else {
+          MenuItems.style.maxHeight = "0px";
+        }
+      }
+    </script>
   </body>
 </html>

@@ -211,19 +211,20 @@ small {
   background: #000;
   color: #8a8a8a;
   font-size: 14px;
-  padding: 80px 0 20px;
+  padding: 60px 0 20px;
 }
 .footer p {
   color: #8a8a8a;
 }
 .footer h3 {
   color: #fff;
+  margin-bottom: 20px;
   text-transform: capitalize;
 }
 .footer-col-1,
-.footer-col-2.footer-col-3,
+.footer-col-2,.footer-col-3,
 .footer-col-4 {
-  min-width: 268px;
+  min-width: 250px;
   margin-bottom: 20px;
 }
 .footer-col-1 {
@@ -250,4 +251,62 @@ ul {
 }
 .app-logo img {
   width: 140px;
+}
+.footer hr {
+  border: none;
+  background: #b5b5b5;
+  height: 1px;
+  margin: 20px 0;
+}
+.copywrite {
+  text-align: center;
+}
+.copywrite .dil {
+  color: red;
+  font-size: 16px;
+}
+
+/* Menu Icon */
+.menu-icon {
+  width: 28px;
+  margin-left: 20px;
+  display: none;
+}
+
+/* Media Query */
+@media only screen and (max-width: 800px) {
+  /* nav */
+  nav ul {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    background: #333;
+    width: 100%;
+    overflow: hidden;
+    transition: max-height 0.5s;
+    text-align: center;
+  }
+  nav ul li {
+    display: block;
+    margin-right: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  nav ul li a {
+    color: #fff;
+  }
+  .menu-icon {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .row {
+    text-align: center;
+  }
+  .col-2,
+  .col-3,
+  .col-4 {
+    flex-basis: 100%;
+  }
 }
